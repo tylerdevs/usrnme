@@ -1,7 +1,7 @@
 {
   "name": "usrnme",
-  "version": "0.0.2",
-  "description": "Comming soon.",
+  "version": "0.0.6",
+  "description": "OSINT username search application.",
   "main": "./src/index.js",
   "scripts": {
     "test": "tape ./tests/index.js"
@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "advanced-pad": "^1.0.6",
-    "chalk": "^3.0.0",
+    "chalk": "^4.0.0",
     "got": "^10.7.0",
     "url": "^0.11.0",
     "yargs": "^15.3.1"
