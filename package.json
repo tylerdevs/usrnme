@@ -1,0 +1,43 @@
+{
+  "name": "usrnme",
+  "version": "0.0.1",
+  "description": "Comming soon.",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "tape ./tests/index.js"
+  },
+  "bin": {
+    "usrnme": "./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylerdevs/usrnme.git"
+  },
+  "keywords": [
+    "email",
+    "valid",
+    "validate",
+    "validation",
+    "regex",
+    "MX",
+    "DNS",
+    "RFC2821"
+  ],
+  "author": "Tyler Colwell <tylerqc@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tylerdevs/usrnme/issues"
+  },
+  "homepage": "https://github.com/tylerdevs/usrnme#readme",
+  "devDependencies": {
+    "jsonschema": "^1.2.6",
+    "tape": "^4.13.2"
+  },
+  "dependencies": {
+    "advanced-pad": "^1.0.6",
+    "chalk": "^3.0.0",
+    "got": "^10.7.0",
+    "url": "^0.11.0",
+    "yargs": "^15.3.1"
+  }
+}
