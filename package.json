@@ -1,6 +1,6 @@
 {
   "name": "usrnme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Comming soon.",
   "main": "./src/index.js",
   "scripts": {
@@ -14,14 +14,11 @@
     "url": "git+https://github.com/tylerdevs/usrnme.git"
   },
   "keywords": [
-    "email",
-    "valid",
-    "validate",
-    "validation",
-    "regex",
-    "MX",
-    "DNS",
-    "RFC2821"
+    "osint",
+    "username",
+    "search",
+    "cli",
+    "infosec"
   ],
   "author": "Tyler Colwell <tylerqc@gmail.com>",
   "license": "MIT",
