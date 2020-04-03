@@ -5,6 +5,7 @@ const fs = require('fs');
 const chalk = require('chalk');
 const yargs = require("yargs");
 const pad = require("advanced-pad");
+const path = require("path")
 const log = console.log;
 
 // options
@@ -32,9 +33,9 @@ const categories = {
 };
 
 // load urls from json file
-let json_data = fs.readFileSync('./src/urls.json');
+const packagePath = path.dirname(require.resolve("usrnme/package.json"));
+let json_data = fs.readFileSync(packagePath + '/src/urls.json');
 let urls = JSON.parse(json_data);
-
 
 // function to fetch urls
 async function fetchAddress(url) {
@@ -79,7 +80,7 @@ async function fetchAddress(url) {
 function writeHTML(matches, username) {
 
 	// load template file
-	let template = fs.readFileSync('./src/template.html', 'UTF8');
+	let template = fs.readFileSync(packagePath + '/src/template.html', 'UTF8');
 
 	// replace data
 	var output = template.replace('{MATCHES}', matches)
@@ -95,11 +96,12 @@ function writeHTML(matches, username) {
 	let sec = dateObj.getSeconds();
 	let filename = username + '_' + year + month + day + hour + mins + sec + '.html';
 
-	fs.writeFile('./output/' + filename, output, function (err,data) {
+	fs.writeFile(packagePath + '/output/' + filename, output, function (err,data) {
 	  if (err) {
 	    log(red(err));
+	  } else {
+	  	log(green('Output File Created: ' + packagePath + '/output/' + filename));
 	  }
-	  log(green('Output File Created: ' + filename))
 	});
 
 
