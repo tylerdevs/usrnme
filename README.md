@@ -16,17 +16,7 @@ Quickly and easily check hundreds of websites to see if an account exists for a 
 # Install
 
 ```
-$ npm install usrnme
-
-// run from location
-$ node .
-```
-To install globally
-```
 $ npm install usrnme -g
-
-// run from anywhere
-$ usrnme
 ```
 
 # Usage
